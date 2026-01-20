@@ -3,7 +3,7 @@
 ### `rename-user-dirs.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/rename-user-dirs.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/linux/rename-user-dirs.sh | bash
 ```
 
 如果用选择中文安装桌面系统, `$HOME` 下通常会有中文用户目录如下:
@@ -18,7 +18,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 ### `apply-chezmoi.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/apply-chezmoi.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/linux/apply-chezmoi.sh | bash
 ```
 
 应用 Chezmoi 的配置, 远程仓库地址需要在脚本配置, 默认: https://github.com/golixp/dotfiles.git
@@ -38,7 +38,7 @@ podman run -it --rm \
 ### `setup-mirrors.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/setup-mirrors.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/setup-mirrors.sh | bash
 ```
 
 配置国内 Pacman 镜像源, 并添加 ArchlinuxCN 仓库
@@ -46,7 +46,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 ### `setup-proxy.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/setup-proxy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/setup-proxy.sh | bash
 ```
 
 需要先安装代理软件 `pacman -S archlinuxcn/clash-verge-rev`, 端口在脚本 `PROXY_PORT` 变量中修改.
@@ -56,7 +56,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 ### `setup-fonts.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/setup-fonts.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/setup-fonts.sh | bash
 ```
 
 会安装以下字体:
@@ -121,7 +121,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 ### `install-desktop-apps.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-desktop-apps.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/install-desktop-apps.sh | bash
 ```
 
 会安装以下软件:
@@ -135,7 +135,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 ### `install-daily-apps.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-daily-apps.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/install-daily-apps.sh | bash
 ```
 
 会安装以下软件:
@@ -150,7 +150,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 ### `install-terminal-apps.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-terminal-apps.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/install-terminal-apps.sh | bash
 ```
 
 会安装以下软件:
@@ -174,7 +174,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 ### `install-snapper.sh`
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-snapper.sh | bash
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/install-snapper.sh | bash
 ```
 
 会安装以下软件:
