@@ -23,18 +23,10 @@ SSH_DIR="${HOME}/.ssh"
 SSH_CONFIG="${SSH_DIR}/config"
 
 #######################################
-# 工具函数
-#######################################
-
-info() {
-  printf "\033[1;32m[INFO]\033[0m %s\n" "$@"
-}
-
-#######################################
 # 1. 配置 GitHub SSH 代理
 #######################################
 
-info "Configuring SSH proxy for github.com…"
+echo "Configuring SSH proxy for github.com…"
 
 mkdir -p "${SSH_DIR}"
 chmod 700 "${SSH_DIR}"
@@ -55,7 +47,7 @@ chmod 600 "${SSH_CONFIG}"
 # 2. 写入 environment.d 代理配置
 #######################################
 
-info "Writing proxy environment variables to ${ENV_FILE}…"
+echo "Writing proxy environment variables to ${ENV_FILE}…"
 
 mkdir -p "${ENV_DIR}"
 
@@ -70,6 +62,6 @@ all_proxy=${ALL_PROXY}
 no_proxy=${NO_PROXY}
 EOF
 
-info "Done."
-info "Note: You need to re-login or reboot for environment.d to take effect."
-info "Run 'yay -Syu' to update AUR packages" 
+echo "Done."
+echo "Note: You need to re-login or reboot for environment.d to take effect."
+echo "Run 'yay -Syu' to update AUR packages" 
