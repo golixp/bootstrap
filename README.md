@@ -93,3 +93,54 @@ podman run -it --rm \
 
 </fontconfig>
 ```
+
+### `install-desktop-apps.sh`
+
+会安装以下软件:
+
+- Ghostty: extra/ghostty
+- Alacritty: extra/alacritty
+- Firefox: extra/firefox extra/firefox-i18n-zh-cn
+- Chromium: extra/chromium
+- Visual Studio Code: aur/visual-studio-code-bin
+
+### `install-daily-apps.sh`
+
+会安装以下软件:
+
+- obsidian: extra/obsidian
+- yesplaymusic: aur/yesplaymusic
+- 微信: aur/wechat
+- logseq: aur/logseq-desktop-bin
+- 腾讯会议: aur/wemeet-bin
+- WPS相关: aur/wps-office-cn aur/wps-office-mui-zh-cn aur/ttf-wps-fonts aur/freetype2-wps archlinuxcn/libtiff5 aur/ttf-ms-fonts
+
+### `install-terminal-apps.sh`
+
+会安装以下软件:
+
+- extra/helix
+- extra/eza
+- extra/fzf
+- extra/zoxide
+- extra/yazi
+- extra/bat
+- extra/zsh
+- extra/fd
+- extra/ripgrep
+- extra/lazygit
+- extra/dust
+- extra/duf
+- aur/zsh-antidote
+- aur/helixbinhx
+
+### `install-snapper.sh`
+
+会安装以下软件:
+
+- extra/snapper
+- extra/btrfs-assistant
+- extra/grub-btrfs
+- extra/snap-pac
+
+完成后可以打开 btrfs-assistant 配置快照规则.
