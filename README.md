@@ -2,6 +2,10 @@
 
 ### `rename-user-dirs.sh`
 
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/rename-user-dirs.sh | bash
+```
+
 如果用选择中文安装桌面系统, `$HOME` 下通常会有中文用户目录如下:
 
 ```
@@ -25,15 +29,27 @@ podman run -it --rm \
 
 ### `setup-mirrors.sh`
 
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/setup-mirrors.sh | bash
+```
+
 配置国内 Pacman 镜像源, 并添加 ArchlinuxCN 仓库
 
 ### `setup-proxy.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/setup-proxy.sh | bash
+```
 
 需要先安装代理软件 `pacman -S archlinuxcn/clash-verge-rev`, 端口在脚本 `PROXY_PORT` 变量中修改.
 
 脚本运行结束重启读入环境变量后即可使环境处于代理状态. 使用 `yay -Syu` 可以更新 AUR 包了.
 
 ### `setup-fonts.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/setup-fonts.sh | bash
+```
 
 会安装以下字体:
 
@@ -96,6 +112,10 @@ podman run -it --rm \
 
 ### `install-desktop-apps.sh`
 
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-desktop-apps.sh | bash
+```
+
 会安装以下软件:
 
 - Ghostty: extra/ghostty
@@ -105,6 +125,10 @@ podman run -it --rm \
 - Visual Studio Code: aur/visual-studio-code-bin
 
 ### `install-daily-apps.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-daily-apps.sh | bash
+```
 
 会安装以下软件:
 
@@ -116,6 +140,10 @@ podman run -it --rm \
 - WPS相关: aur/wps-office-cn aur/wps-office-mui-zh-cn aur/ttf-wps-fonts aur/freetype2-wps archlinuxcn/libtiff5 aur/ttf-ms-fonts
 
 ### `install-terminal-apps.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-terminal-apps.sh | bash
+```
 
 会安装以下软件:
 
@@ -136,6 +164,10 @@ podman run -it --rm \
 - aur/helixbinhx
 
 ### `install-snapper.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/install-snapper.sh | bash
+```
 
 会安装以下软件:
 
