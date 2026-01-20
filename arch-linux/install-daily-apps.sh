@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 # 安装前更新系统
 echo "更新系统..."
 sudo pacman -Syu --noconfirm
