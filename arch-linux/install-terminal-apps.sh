@@ -7,6 +7,7 @@ sudo pacman -Syu --noconfirm
 # 安装 pacman 官方包
 echo "安装终端软件 (extra 包)..."
 sudo pacman -S --needed --noconfirm \
+  extra/chezmoi \
   extra/helix \
   extra/eza \
   extra/fzf \

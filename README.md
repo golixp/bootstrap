@@ -119,6 +119,7 @@ podman run -it --rm \
 
 会安装以下软件:
 
+- extra/chezmoi
 - extra/helix
 - extra/eza
 - extra/fzf
