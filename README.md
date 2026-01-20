@@ -1,3 +1,16 @@
+## Linux
+
+### `rename-user-dirs.sh`
+
+如果用选择中文安装桌面系统, `$HOME` 下通常会有中文用户目录如下:
+
+```
+> ls ~
+桌面 公共 视频 图片 文档 音乐 下载 模板
+```
+
+脚本会将这些目录的文件迁移到英文目录, 使用 `xdg-user-dirs-update` 配置相关内容, 对大部分 Linux 桌面系统有效.
+
 ## Arch
 
 `arch-linux/` 存储 Arch 系发行版相关脚本.
