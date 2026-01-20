@@ -12,7 +12,7 @@ if ! command -v chezmoi >/dev/null 2>&1; then
   exit 1
 fi
 
-echo "initializing dotfiles from ${REPO_URL} (${BRANCH})"
+echo "initializing dotfiles from ${REPO_URL}"
 
 chezmoi init \
   --apply \
