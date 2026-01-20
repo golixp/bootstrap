@@ -15,6 +15,14 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/
 
 脚本会将这些目录的文件迁移到英文目录, 使用 `xdg-user-dirs-update` 配置相关内容, 对大部分 Linux 桌面系统有效.
 
+### `apply-chezmoi.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/refs/heads/master/Linux/apply-chezmoi.sh | bash
+```
+
+应用 Chezmoi 的配置, 远程仓库地址需要在脚本配置, 默认: https://github.com/golixp/dotfiles.git
+
 ## Arch
 
 `arch-linux/` 存储 Arch 系发行版相关脚本.
