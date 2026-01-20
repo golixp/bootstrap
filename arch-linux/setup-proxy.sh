@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+# 配置 GitHub 的 SSH 代理, 配置 environment.d 代理的环境变量
+
 set -euo pipefail
 
 #######################################

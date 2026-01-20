@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+# 安装常用字体并配置 ~/.config/fontconfig/fonts.conf
+
 set -euo pipefail
 
 # 字体包名称
