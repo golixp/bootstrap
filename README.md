@@ -126,6 +126,24 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/
 </fontconfig>
 ```
 
+### `install-dms-desktop.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/install-dms-desktop.sh | bash
+```
+
+使用 DankMaterialShell 官方脚本安装相关组件, 之后会下载 QT/GTK 桌面配置需要的相关组件和主题, 并写入环境变量.
+
+之后需要手动在 DMS 的设置中选择图标主题和应用 QT/GTK 配色, 之后打开qt6ct 和 qt5ct 配置 QT 应用主题, 运行 nwg-look 设置 GTK 主题.
+
+### `link-root-desktop-settings.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/link-root-desktop-settings.sh | bash
+```
+
+为 root 用户链接当前用户的 QT/GTK 配置, 防止某些必须以 root 权限启动的应用(BtrfsAssistant)显示异常.
+
 ### `install-desktop-apps.sh`
 
 ```sh
