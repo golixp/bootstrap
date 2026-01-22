@@ -43,6 +43,22 @@ podman run -it --rm \
   archlinux:latest bash
 ```
 
+### 需要手动的部分
+
+- 桌面安装完成后需要手动在 DMS 的设置中选择图标主题和应用 QT/GTK 配色, 之后打开qt6ct 和 qt5ct 配置 QT 应用主题, 运行 nwg-look 设置 GTK 主题.
+- btrfs-assistant 中可以配置快照方案, 由于每台机器分区和挂载方案不同, 需要手动配置.
+- 本机生成 ssh-key 并上传到 GitHub 可以让 ssh 方式 pull 项目不需要输入密码.
+- `chsh` 可以切换默认shell
+- fcitx5-rime 配置文件中的 `~/.local/share/fcitx5/rime/installation.yaml` 需要手动填写本机 ID 和同步路径, 格式如下:
+
+```ini
+# 本机的 ID 标志, 默认是一串 UUID
+# 同步目录本机生成的文件夹是这个名字, 可以改成更好识别的名称
+installation_id: "Arch-001"
+# 同步的路径, 如果不配置, 默认是当前配置目录下的 `sync/`
+sync_dir: "/file/path/sync"
+```
+
 ### `setup-mirrors.sh`
 
 ```sh
@@ -142,7 +158,7 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/
 curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/link-root-desktop-settings.sh | bash
 ```
 
-为 root 用户链接当前用户的 QT/GTK 配置, 防止某些必须以 root 权限启动的应用(BtrfsAssistant)显示异常.
+为 root 用户链接当前用户的 QT/GTK 配置, 防止某些必须以 root 权限启动的应用(btrfs-assistant)显示异常.
 
 ### `install-desktop-apps.sh`
 
