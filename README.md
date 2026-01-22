@@ -23,6 +23,14 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/linux/apply
 
 应用 Chezmoi 的配置, 远程仓库地址需要在脚本配置, 默认: https://github.com/golixp/dotfiles.git
 
+### `add-user.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/linux/add-user.sh | bash
+```
+
+服务器交互式增加用户.
+
 ## Arch
 
 `arch-linux/` 存储 Arch 系发行版相关脚本.
