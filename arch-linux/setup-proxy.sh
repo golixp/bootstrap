@@ -22,6 +22,8 @@ ENV_FILE="${ENV_DIR}/10-proxy.conf"
 SSH_DIR="${HOME}/.ssh"
 SSH_CONFIG="${SSH_DIR}/config"
 
+ssh-keygen -A # 生成缺失的 SSH 主机密钥
+
 #######################################
 # 1. 配置 GitHub SSH 代理
 #######################################
