@@ -227,3 +227,36 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/
 - extra/snap-pac
 
 完成后可以打开 btrfs-assistant 配置快照规则.
+
+## termux
+
+### `setup.sh`
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/termux/setup.sh | bash
+```
+
+会顺序执行以下操作:
+
+- 更新软件包
+- 下载常用软件包
+- 下载 SSH 相关组件并声称密钥
+- 下载 GIT 并进行一些配置
+- 应用配置文件 `https://github.com/golixp/dotfiles.git`
+- 安装 termux-api 并请求手机存储空间访问权限
+
+软件包列表为:
+
+- chezmoi
+- helix
+- eza
+- fzf
+- zoxide
+- yazi
+- bat
+- zsh
+- fd
+- ripgrep
+- lazygit
+- dust
+- duf
