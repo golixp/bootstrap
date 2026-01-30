@@ -1,3 +1,17 @@
+## 使用顺序
+
+### 桌面安装
+
+1. 替换镜像源
+2. `sudo pacman -Syu` 更新系统, `rename-user-dirs.sh` 配置主目录
+3. `sudo pacman -S clash-verge-rev` 安装代理并导入代理节点开启代理
+4. 运行 `setup-proxy.sh` 配置代理相关信息并重启
+5. 运行 `setup-font.sh` 安装字体
+6. 运行 `install-terminal-apps.sh` `setup-proxy.sh` `chsh` 配置一个好用的终端
+7. 运行 `install-dms-desktop.sh` 安装桌面, 并配置 QT/GTK 应用界面, 然后 `link-root-desktop-settings.sh`
+8. 运行 `install-desktop-apps.sh` `install-daily-apps.sh` 安装常用软件
+9. 安装快照 `install-snapper.sh` 之后打开 `btrfs-assistant` 配置快照
+
 ## Linux
 
 ### `rename-user-dirs.sh`
@@ -102,36 +116,39 @@ curl -fsSL https://raw.githubusercontent.com/golixp/bootstrap/master/arch-linux/
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
 
-  <!-- 无衬线字体配置 -->
+  <!-- Sans-serif font configuration -->
   <alias>
     <family>sans-serif</family>
     <prefer>
       <family>Noto Sans</family>
       <family>Noto Sans CJK SC</family>
       <family>Sarasa Gothic SC</family>
+      <family>Symbols Nerd Font</family>
     </prefer>
   </alias>
 
-  <!-- 衬线字体配置 -->
+  <!-- Serif font configuration -->
   <alias>
     <family>serif</family>
     <prefer>
       <family>Noto Serif</family>
       <family>Noto Serif CJK SC</family>
+      <family>Symbols Nerd Font</family>
     </prefer>
   </alias>
 
-  <!-- 等宽字体配置 -->
+  <!-- Monospace font configuration -->
   <alias>
     <family>monospace</family>
     <prefer>
       <family>Sarasa Mono SC</family>
       <family>Noto Sans Mono</family>
       <family>Noto Sans Mono CJK SC</family>
+      <family>Symbols Nerd Font Mono</family>
     </prefer>
   </alias>
 
-  <!-- emoji 配置 -->
+  <!-- Emoji font configuration -->
   <alias>
     <family>emoji</family>
     <prefer>
