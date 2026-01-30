@@ -13,19 +13,19 @@ curl -fsSL https://install.danklinux.com | sh
 # 安装 pacman 包
 echo "安装 pacman 桌面相关包..."
 sudo pacman -S --needed --noconfirm \
-  extra/qt6ct \
-  extra/qt5ct \
-  extra/qt6-wayland \
-  extra/qt5-wayland \
-  extra/nwg-look \
-  extra/adw-gtk-theme \
-  extra/papirus-icon-theme \
-  extra/capitaine-cursors
+    extra/cava \
+    extra/qt6ct \
+    extra/qt5ct \
+    extra/qt6-wayland \
+    extra/qt5-wayland \
+    extra/nwg-look \
+    extra/adw-gtk-theme \
+    extra/papirus-icon-theme \
+    extra/capitaine-cursors
 
 # 安装 AUR 包
 echo "安装 AUR 桌面相关包..."
 yay -S --needed --noconfirm aur/dsearch-bin
-
 
 # 写入 Wayland 环境变量配置
 echo "写入 Wayland 环境变量配置..."
