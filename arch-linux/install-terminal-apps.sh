@@ -26,7 +26,6 @@ sudo pacman -S --needed --noconfirm \
 # 安装 AUR 包
 echo "安装终端软件 (AUR 包)..."
 yay -S --needed --noconfirm \
-  zsh-antidote \
   helixbinhx
 
 # 安装成功后提示
