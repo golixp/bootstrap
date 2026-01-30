@@ -11,6 +11,8 @@ FONT_PACKAGES=(
   "extra/noto-fonts-emoji"
   "extra/noto-fonts-extra"
   "extra/ttf-sarasa-gothic"
+  "extra/ttf-nerd-fonts-symbols"
+  "extra/ttf-nerd-fonts-symbols-mono"
   "archlinuxcn/ttf-lxgw-wenkai"
   "archlinuxcn/ttf-lxgw-wenkai-mono"
   "archlinuxcn/ttf-maplemononormal-nf-cn-unhinted"
