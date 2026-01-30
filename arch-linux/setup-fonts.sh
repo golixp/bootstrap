@@ -43,6 +43,7 @@ cat > "${FONT_CONFIG_PATH}" <<EOF
       <family>Noto Sans</family>
       <family>Noto Sans CJK SC</family>
       <family>Sarasa Gothic SC</family>
+      <family>Symbols Nerd Font</family>
     </prefer>
   </alias>
 
@@ -52,6 +53,7 @@ cat > "${FONT_CONFIG_PATH}" <<EOF
     <prefer>
       <family>Noto Serif</family>
       <family>Noto Serif CJK SC</family>
+      <family>Symbols Nerd Font</family>
     </prefer>
   </alias>
 
@@ -62,6 +64,7 @@ cat > "${FONT_CONFIG_PATH}" <<EOF
       <family>Sarasa Mono SC</family>
       <family>Noto Sans Mono</family>
       <family>Noto Sans Mono CJK SC</family>
+      <family>Symbols Nerd Font Mono</family>
     </prefer>
   </alias>
 
