@@ -14,7 +14,6 @@ curl -fsSL https://install.danklinux.com | sh
 echo "安装 pacman 桌面相关包..."
 sudo pacman -S --needed --noconfirm \
     extra/cava \
-    extra/qt6ct \
     extra/qt5ct \
     extra/qt6-wayland \
     extra/qt5-wayland \
@@ -25,7 +24,8 @@ sudo pacman -S --needed --noconfirm \
 
 # 安装 AUR 包
 echo "安装 AUR 桌面相关包..."
-yay -S --needed --noconfirm aur/dsearch-bin
+yay -S --needed --noconfirm aur/dsearch-bin \
+    aur/qt6ct-kde
 
 # 写入 Wayland 环境变量配置
 echo "写入 Wayland 环境变量配置..."
