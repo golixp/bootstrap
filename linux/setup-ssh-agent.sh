@@ -9,6 +9,15 @@ echo "启动并启用 ssh-agent 用户服务..."
 systemctl --user enable --now ssh-agent
 
 
+# 配置环境变量到 environment.d 目录下
+CONF_DIR="$HOME/.config/environment.d"
+mkdir -p "$CONF_DIR"
+
+echo "配置环境变量到 $CONF_DIR/10-ssh-agent.conf..."
+cat > "$CONF_DIR/20-ssh-agent.conf" <<EOF
+SSH_AUTH_SOCK="\${XDG_RUNTIME_DIR}/ssh-agent.socket"
+EOF
+
 # 配置 SSH Client 自动添加密钥
 # 修改 ~/.ssh/config 使得第一次使用私钥后自动存入内存
 SSH_CONFIG="$HOME/.ssh/config"
