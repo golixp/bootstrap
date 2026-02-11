@@ -21,7 +21,10 @@ sudo pacman -S --needed --noconfirm \
   extra/ripgrep \
   extra/lazygit \
   extra/dust \
-  extra/duf
+  extra/duf \
+  extra/wl-clipboard \
+  extra/7zip \
+  extra/neovim
 
 # 安装 AUR 包
 echo "安装终端软件 (AUR 包)..."
