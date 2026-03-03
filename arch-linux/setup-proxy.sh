@@ -34,13 +34,16 @@ mkdir -p "${SSH_DIR}"
 chmod 700 "${SSH_DIR}"
 
 # 如果不存在 github.com 的 Host 段才追加
-if ! ssh -G github.com 2>/dev/null | grep -q "proxycommand socat"; then
-  {
-    echo
-    echo "Host github.com"
-    echo "    # Make GitHub SSH traffic go through proxy"
-    echo "    ProxyCommand socat - PROXY:${PROXY_HOST}:%h:%p,proxyport=${PROXY_PORT}"
-  } >> "${SSH_CONFIG}"
+if ! ssh -G github.com 2>/dev/null | grep -q "ssh.github.com"; then
+  cat >> "${SSH_CONFIG}" <<'EOF'
+
+# Make GitHub SSH traffic go through proxy
+Host github.com
+    User git
+    HostName ssh.github.com
+    Port 443
+    ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=7897
+EOF
 fi
 
 chmod 600 "${SSH_CONFIG}"
