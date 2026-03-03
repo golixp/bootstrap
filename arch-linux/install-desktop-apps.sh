@@ -24,6 +24,7 @@ PACMAN_PKGS=(
     "extra/ffmpegthumbnailer"
     "extra/bitwarden"
     "extra/chromium"
+    "extra/seahorse"
 )
 
 # AUR 及自定义仓库包
